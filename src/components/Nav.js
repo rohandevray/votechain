@@ -30,9 +30,13 @@ const NavBar = styled.div`
 `;
 const Logo = styled.div`
   display: flex;
+  h1 {
+    cursor: pointer;
+  }
 `;
 const Wallet = styled.div`
   display: flex;
+  cursor: pointer;
 `;
 
 export default Nav;

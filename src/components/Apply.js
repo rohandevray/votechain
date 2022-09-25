@@ -1,10 +1,18 @@
 import React from "react";
 import styled from "styled-components";
+import { useState } from "react";
+import ApplicantApproval from "./ApplicantApproval";
 
 function Apply() {
-  const handleClick = (e) => {
-    e.target.parentNode.removeChild(e.target);
-  };
+  const [buttonTextX, setButtonTextX] = useState("Approve");
+  const [buttonTextY, setButtonTextY] = useState("Decline");
+
+  // function handleClickX() {
+  //   setButtonTextX("Request Sent");
+  // }
+  // function handleClickY() {
+  //   setButtonTextY("Request Sent");
+  // }
   return (
     <FormY>
       <h1>Applicants</h1>
@@ -14,29 +22,19 @@ function Apply() {
           <Identity>
             <h2>Vexee</h2>
             <p>0xCd1EC88e81Ae221518bFbe8590245523ecc43eFd</p>
-
-            <Game>
-              <button onClick={handleClick}>Approve</button>
-              <button onClick={handleClick}>Decline</button>
-            </Game>
+            <ApplicantApproval />
           </Identity>
           <Identity>
             <h2>Flakes</h2>
             <p>0xCd1EC88e81Ae221518bFbe8590245523ecc43eFd</p>
 
-            <Game>
-              <button onClick={handleClick}>Approve</button>
-              <button onClick={handleClick}>Decline</button>
-            </Game>
+            <ApplicantApproval />
           </Identity>
           <Identity>
             <h2>Chaman</h2>
             <p>0xCd1EC88e81Ae221518bFbe8590245523ecc43eFd</p>
 
-            <Game>
-              <button onClick={handleClick}>Approve</button>
-              <button onClick={handleClick}>Decline</button>
-            </Game>
+            <ApplicantApproval />
           </Identity>
         </Card>
         <Card>
@@ -45,28 +43,19 @@ function Apply() {
             <h2>Vexee</h2>
             <p>0xCd1EC88e81Ae221518bFbe8590245523ecc43eFd</p>
 
-            <Game>
-              <button onClick={handleClick}>Approve</button>
-              <button onClick={handleClick}>Decline</button>
-            </Game>
+            <ApplicantApproval />
           </Identity>
           <Identity>
             <h2>Bruno</h2>
             <p>0xCd1EC88e81Ae221518bFbe8590245523ecc43eFd</p>
 
-            <Game>
-              <button onClick={handleClick}>Approve</button>
-              <button onClick={handleClick}>Decline</button>
-            </Game>
+            <ApplicantApproval />
           </Identity>
           <Identity>
             <h2>Jack</h2>
             <p>0xCd1EC88e81Ae221518bFbe8590245523ecc43eFd</p>
 
-            <Game>
-              <button onClick={handleClick}>Approve</button>
-              <button onClick={handleClick}>Decline</button>
-            </Game>
+            <ApplicantApproval />
           </Identity>
         </Card>
         <Card>
@@ -75,28 +64,18 @@ function Apply() {
             <h2>Vexee</h2>
             <p>0xCd1EC88e81Ae221518bFbe8590245523ecc43eFd</p>
 
-            <Game>
-              <button onClick={handleClick}>Approve</button>
-              <button onClick={handleClick}>Decline</button>
-            </Game>
+            <ApplicantApproval />
           </Identity>
           <Identity>
             <h2>Bruno</h2>
             <p>0xCd1EC88e81Ae221518bFbe8590245523ecc43eFd</p>
 
-            <Game>
-              <button onClick={handleClick}>Approve</button>
-              <button onClick={handleClick}>Decline</button>
-            </Game>
+            <ApplicantApproval />
           </Identity>
           <Identity>
             <h2>Jack</h2>
             <p>0xCd1EC88e81Ae221518bFbe8590245523ecc43eFd</p>
-
-            <Game>
-              <button>Approve</button>
-              <button>Decline</button>
-            </Game>
+            <ApplicantApproval />
           </Identity>
         </Card>
       </List>
@@ -125,39 +104,12 @@ const List = styled.div`
   padding-top: 5%;
   display: block;
   overflow: scroll;
-  /* display: grid;
-  grid-template-columns: 150rem 150rem;
-  grid-gap: 1rem;
-  grid-auto-flow: row; */
 `;
 
 const Identity = styled.div`
   display: flex;
   justify-content: space-between;
   padding-top: 2%;
-`;
-
-const Game = styled.div`
-  button {
-    width: 20rem;
-    height: 9rem;
-    background-color: #07a081;
-    cursor: pointer;
-    border-radius: 1rem;
-    font-size: 3.5rem;
-    color: white;
-    font-weight: 400;
-    margin: 0 20px;
-    transition: all 0.5s ease;
-    :hover {
-      letter-spacing: 2px;
-    }
-    border: none;
-    outline: none;
-    /* :focus {
-      
-    } */
-  }
 `;
 
 export default Apply;

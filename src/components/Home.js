@@ -7,19 +7,19 @@ function Home() {
     <Main>
       <Content>
         <h1>
-          Let's build a better <br />
+          Let's build a fairer <br />
           tommorrow , together
         </h1>
         <p>Vote for the best. Forget the rest</p>
         <Buttons>
-          <Link to="/votes">
-            <button>Votes</button>
+          <Link to="/admin">
+            <button>Vote</button>
           </Link>
           <Link to="/admin">
             <button>Admin</button>
           </Link>
-          <Link to="/applicants">
-            <button>Candidates</button>
+          <Link to="/admin">
+            <button>Apply for Candidates</button>
           </Link>
         </Buttons>
       </Content>

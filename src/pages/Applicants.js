@@ -15,8 +15,8 @@ function Applicants() {
 const Box = styled.div`
   width: 100vw;
   height: 100vh;
-  /* display: flex; */
-  /* overflow: auto; */
+  display: flex;
+  overflow-y: auto;
 `;
 
 export default Applicants;
