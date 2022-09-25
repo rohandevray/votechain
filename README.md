@@ -2,7 +2,7 @@
 ## Decentralized blockchain based voting system for oragnizations
 
 VoteBlock is a decentralized blockchain based voting system for oragnization. 
-
+![alt text](https://github.com/rohandevray/votechain/tree/main/images)
 ## Features
 
 VoteBlock has 3 roles involves:
