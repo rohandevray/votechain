@@ -1,6 +1,8 @@
 # VoteBlock
 ## Decentralized blockchain based voting system for oragnizations
 
+##BACKEND DEMONSTRATION VIDEO - https://www.loom.com/share/b3c29599bafd4b93953b57a463bdd305 
+
 VoteBlock is a decentralized blockchain based voting system for oragnization. It is built upon ethereum blockchain with use of truffle framework. The frontend part of it uses react js and backend is on ethereum with smart contracts in solidity. So here an admin of any organisation can create on or multiple elections, where people from that organisations apply to it. Voters here can login using metamask and their identity is completely anonymous. They can see the results, apply and be candidate.
 
 <img src="https://github.com/rohandevray/votechain/blob/main/images/WhatsApp%20Image%202022-09-25%20at%2012.29.22%20PM.jpeg"
