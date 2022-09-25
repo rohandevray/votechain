@@ -1,18 +1,26 @@
 import React from "react";
-import Nav from "./components/Nav";
-import Home from "./components/Home";
-import ElectionCard from "./components/ElectionCard";
-import { Route, Routes } from "react-router-dom";
-import SingleElection from "./components/SingleElection";
+import Land from "./pages/Land";
+import GlobalStyle from "./components/GlobalStyles";
+import Phase2 from "./pages/Phase2";
+import Applicants from "./pages/Applicants";
+import Votes from "./pages/Votes";
+import { Routes, Route } from "react-router-dom";
+import Admin from "./pages/Admin";
+
+// import ElectionCard from "./components/ElectionCard";
+// import { Route, Routes } from "react-router-dom";
+// import SingleElection from "./components/SingleElection";
 
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <ElectionCard />
-      <h1>Hello React</h1>
+      <GlobalStyle />
       <Routes>
-        <Route path="/election/:electionid" element={SingleElection}></Route>
+        <Route path="/" element={<Land />} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/create-election" element={<Phase2 />} />
+        <Route path="/applicants" element={<Applicants />} />
+        <Route path="/votes" element={<Votes />} />
       </Routes>
     </div>
   );
